@@ -27,6 +27,7 @@ public class UserServiceImpl implements IUserService {
 
     @Override
     public User findOne(String id) {
+        System.out.println("laile ");
         User list = userMapper.selectById(id);
         return list;
     }
