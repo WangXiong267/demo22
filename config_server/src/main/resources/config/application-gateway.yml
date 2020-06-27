@@ -1,0 +1,15 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      #配置路由规则
+      routes:
+        #用户服务的路由规则
+        - id: sso
+          uri: lb://userinfo-web
+          predicates:
+            - Path=/user/**
+

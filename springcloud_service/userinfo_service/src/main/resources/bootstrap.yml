@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:20000
+      name: application
+      profile: database,eurekaserver
+  application:
+    name: userinfo-service
+server:
+  port: 8890

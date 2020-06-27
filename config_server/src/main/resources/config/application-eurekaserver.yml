@@ -1,0 +1,6 @@
+eureka:
+  client:
+    #注册中心的地址
+    service-url:
+      defaultZone: http://localhost:11000/eureka
+
